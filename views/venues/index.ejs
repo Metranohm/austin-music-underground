@@ -3,12 +3,20 @@
 
 <section>
   <h1>Venues!</h1>
-  <h2>All the Venues!</h2>
-	<ul>
-  <% venues.forEach(taco => { %>
-    <li>🌮 <%= venue.name %> is <%= venue.tasty ? 'tasty' : 'not tasty' %></li>
-  <% }) %>
-  </ul>
-</section>
+	<%# New Code Below %>
+  <% if (user) { %>
+    <h2>Add a Venue!</h2>
+    <form action="/venues" method="POST">
+      <label>
+        Name: 
+        <input type="text" name="name" autocomplete="off">
+      </label>
+      <label>
+        Tasty?
+        <input type="checkbox" name="tasty">
+      </label>
+      <button type="submit">Add 🌮</button>
+    </form>
+  <% } %>
 
 <%- include('../partials/footer') %>

@@ -5,7 +5,7 @@ function index(req, res) {
   .then(venues => {
     res.render('venue/index', {
       venues,
-      title: "🌮"
+      title: "Venue"
     })
   })
   .catch(err => {
@@ -17,13 +17,13 @@ function index(req, res) {
 function create(req, res) {
   req.body.owner = req.user.profile._id
 	req.body.tasty = !!req.body.tasty
-  Taco.create(req.body)
-  .then(taco => {
-    res.redirect('/tacos')
+  Venue.create(req.body)
+  .then(venue => {
+    res.redirect('/venues')
   })
   .catch(err => {
     console.log(err)
-    res.redirect('/tacos')
+    res.redirect('/venues')
   })
 }
 
