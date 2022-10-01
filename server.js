@@ -1,4 +1,5 @@
 // import npm packages
+import { passDataToView } from './middleware/middleware.js'
 import 'dotenv/config.js'
 import express from 'express'
 import path from 'path'
