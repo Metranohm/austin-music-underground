@@ -1,5 +1,5 @@
 import { Router } from 'express'
-import * as venuesCtrl from '../controllers/venues.js'
+import * as venuesCtrl from '../controllers/venue.js'
 import { isLoggedIn } from '../middleware/middleware.js'
 
 const router = Router()

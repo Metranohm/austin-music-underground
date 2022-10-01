@@ -9,11 +9,16 @@
     <form action="/venues" method="POST">
       <label>
         Name: 
-        <input type="text" name="name" autocomplete="off">
+        <input type="text" name="title" autocomplete="off">
       </label>
+      <form action="/venues" method="POST">
+        <label>
+          ObjectId: 
+          <input type="text" name="_id" autocomplete="off">
+        </label>
       <label>
-        Tasty?
-        <input type="checkbox" name="tasty">
+        Image URL:
+        <input type="text" name="imageURL">
       </label>
       <button type="submit">Add 🌮</button>
     </form>

@@ -3,10 +3,9 @@ import mongoose from 'mongoose'
 const Schema = mongoose.Schema
 
 const venueSchema = new Schema({
-  name: String,
-  tasty: Boolean,
+  title: String,
   imageURL: String,
-  reviews: { type: Schema.Types.ObjectId, ref: "Reviews" }
+  // reviews: { type: Schema.Types.ObjectId, ref: "Reviews" }
 }, {
   timestamps: true
 })

@@ -3,9 +3,9 @@ import { Venue } from '../models/venue.js'
 function index(req, res) {
   Venue.find({})
   .then(venues => {
-    res.render('venue/index', {
+    res.render('venues/index', {
       venues,
-      title: "Venue"
+      title: "Venues"
     })
   })
   .catch(err => {
@@ -16,14 +16,14 @@ function index(req, res) {
 
 function create(req, res) {
   req.body.owner = req.user.profile._id
-	req.body.tasty = !!req.body.tasty
+	console.log(req.body)
   Venue.create(req.body)
   .then(venue => {
-    res.redirect('/venues')
+    res.redirect('/profiles')
   })
   .catch(err => {
     console.log(err)
-    res.redirect('/venues')
+    res.redirect('/profiles')
   })
 }
 
