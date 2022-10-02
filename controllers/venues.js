@@ -19,7 +19,7 @@ function create(req, res) {
 	console.log(req.body)
   Venue.create(req.body)
   .then(venue => {
-    res.redirect('/profiles')
+    res.redirect('/new')
   })
   .catch(err => {
     console.log(err)
@@ -27,7 +27,14 @@ function create(req, res) {
   })
 }
 
+function newVenue(req, res) {
+  res.render("venues/new", {
+    title: "Add Venue"
+  })
+}
+
 export {
   index,
+  newVenue as new,
   create
 }

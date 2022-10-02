@@ -1,0 +1,25 @@
+<%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/venues/new.css" />
+<%- include('../partials/nav') %>
+
+<main>
+  <h1><%= title %></h1>
+  <form id="new-form" action="/venues" method="POST">
+    <label for="title-input">Venue:</label>
+    <input type="text" name="title" id="title-input">
+    <label for="address-year-input">Address:</label>
+    <input type="text" name="address" id="address-year-input">
+    <label for="mpaa-rating-select">MPAA Rating</label>
+    <select name="mpaaRating" id="mpaa-rating-select">
+      <option value="G">G</option>
+      <option value="PG">PG</option>
+      <option value="PG-13">PG-13</option>
+      <option value="R">R</option>
+    </select>
+    <label for="now-showing-checkbox">Now Showing:</label>
+    <input type="checkbox" name="nowShowing" checked id="now-showing-checkbox">
+    <button type="submit">Add Movie</button>
+  </form>
+</main>
+
+<%- include("../partials/footer") %>
