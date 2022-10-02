@@ -1,33 +1,7 @@
 <%- include('../partials/html-head') %>
 <%- include('../partials/nav') %>
 
-<section>
-  <h1>Venues!</h1>
-	<%# New Code Below %>
-  <% if (user) { %>
-    <h2>Add a Venue!</h2>
-    <form action="/venues" method="POST">
-      <label>
-        Name: 
-        <input type="text" name="title" autocomplete="off">
-      </label>
-      <label>
-        Address: 
-        <input type="text" name="address" autocomplete="off">
-      </label>
-      <label>
-        Details: 
-        <input type="text" name="details" autocomplete="off">
-      </label>
-      <label>
-        Image URL:
-        <input type="text" name="imageURL">
-      </label>
-      <button type="submit">Add Venue</button>
-    </form>
-  <% } %>
-
-  
+<section>  
 <h1>Venues</h1>
   <table>
     <thead>
@@ -39,14 +13,12 @@
       </tr>
     </thead>
     <tbody>
-      <%# Oh hey, this is an ejs comment! It starts with a # %>
-      <% venue.forEach(venue => { %>
+      <% venues.forEach(venue => { %>
         <tr>
           <td><%= venue.title %></td>
           <td><%= venue.address %></td>
           <td><%= venue.details %></td>
           <td><%= venue.imageURL %></td>
-          <%# finish the ternary expression to display 'Yes' or 'Nope' %> 
           <td><a href="/venues/<%= venue._id %>">DETAILS</a></td>
           <td>
           <!-- <form action="/venues/<%# venue._id %>?_method=DELETE" method="POST">
