@@ -51,9 +51,17 @@
             <td><%= review.createdAt.toLocaleDateString() %></td>
             <td><%= review.content %></td>
             <td><%= review.rating %></td>
+            <td><%= review.author.name %></td>
+            <td>
+              <% if(user?.profile?._id.equals(review.author._id)) {%>
+              <form action="/venues/<%= venue._id%>/reviews/<%=review._id%>?_method=DELETE" method="POST">
+                <button type="submit">Delete</button>
+              </form>
+              <%}%>
+            </td>
           </tr>
         <% }) %>
-      </tbody>
+      </tbody> 
     </table>
   <% } else { %>
     <h3>No Reviews Yet</h3>

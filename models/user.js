@@ -3,7 +3,6 @@ import mongoose from 'mongoose'
 const Schema = mongoose.Schema
 
 const userSchema = new Schema({
-  // _id: ObjectId,
   email: String,
   googleId: String,
   profile: { type: Schema.Types.ObjectId, ref: 'Profile' },

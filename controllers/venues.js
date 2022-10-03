@@ -39,8 +39,9 @@ function newVenue(req, res) {
 
 function show(req, res) {
   Venue.findById(req.params.id)
+  .populate('reviews.author')
   .then(venue => {
-    console.log('venue');
+    console.log('venue', venue);
     res.render('venues/show', {
       venue,
       title: "show"
@@ -79,6 +80,7 @@ function edit(req, res) {
 }
 
 function createReview(req, res) {
+  req.body.author = req.user.profile
   Venue.findById(req.params.id)
   .then(venue => {
     venue.reviews.push(req.body)
@@ -101,6 +103,22 @@ function update(req, res) {
   console.log(("!!!!!!!!!!!UPDATE REQUEST!!!!!!!!!"))
 }
 
+function deleteReview(req, res) {
+  Venue.findById(req.params.venueId)
+  .then(venue => {
+    venue.reviews.remove({_id:req.params.reviewId})
+    venue.save()
+    .then(() => {
+      res.redirect(`/venues/${venue._id}`)
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/')
+  })
+}
+
+
 export {
   index,
   newVenue as new,
@@ -109,5 +127,6 @@ export {
   deleteVenue as delete,
   edit, 
   update, 
-  createReview
+  createReview,
+  deleteReview 
 }

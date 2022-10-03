@@ -16,7 +16,7 @@ router.get("/:id", venuesCtrl.show)
 
 router.post("/:id/reviews", venuesCtrl.createReview)
 
-// router.post("/:id/reviews", venuesCtrl.)
+router.delete("/:venueId/reviews/:reviewId", venuesCtrl.deleteReview)
 
 // router.get("/:id/edit", venuesCtrl.edit)
 
