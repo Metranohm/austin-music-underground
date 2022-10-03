@@ -63,10 +63,31 @@ function deleteVenue(req, res) {
   })
 }
 
+function edit(req, res) {
+  console.log("!!!UPDATING UPDATING!!!!!")
+  Venue.findById(req.params.id)
+  .then(venue => {
+    res.render("venues/edit", {
+      venue, 
+      title: "Edit Venue"
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect("/")
+  })
+}
+
+function update(req, res) {
+  console.log(("!!!!!!!!!!!UPDATE REQUEST!!!!!!!!!"))
+}
+
 export {
   index,
   newVenue as new,
   create, 
   show,
-  deleteVenue as delete
+  deleteVenue as delete,
+  edit, 
+  update
 }
