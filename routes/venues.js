@@ -14,6 +14,10 @@ router.delete("/:id", isLoggedIn, venuesCtrl.delete)
 
 router.get("/:id", venuesCtrl.show)
 
+router.post("/:id/reviews", venuesCtrl.createReview)
+
+// router.post("/:id/reviews", venuesCtrl.)
+
 // router.get("/:id/edit", venuesCtrl.edit)
 
 // router.put("/:id", venuesCtrl.update)

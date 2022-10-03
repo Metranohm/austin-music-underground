@@ -12,16 +12,14 @@
     <div>Details: </div>
     <div><%= venue.details %></div>
   </section>
-  <% // new markup below %>
+  
   <h2>Reviews</h2>
   <form 
     id="add-review-form"
     action="/venues/<%= venue._id %>/reviews"
     method="POST"
   >
-    <label for="content-textarea">Review:</label>
-    <textarea name="content" id="content-textarea"></textarea>
-    <label for="rating-select">Rating:</label>
+  <label for="rating-select">Rating:</label>
     <select name="rating" id="rating-select">
       <option value="1">1</option>
       <option value="2">2</option>
@@ -33,9 +31,33 @@
       <option value="8">8</option>
       <option value="9">9</option>
       <option value="10" selected>10</option>
+    <label for="content-textarea">Review:</label>
+    <textarea name="content" id="content-textarea"></textarea>
     </select>
     <button type="submit">Add Review</button>
   </form>
+  <% if (venue.reviews.length) { %>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Review</th>
+          <th>Rating</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% venue.reviews.forEach(function(review) { %>
+          <tr>
+            <td><%= review.createdAt.toLocaleDateString() %></td>
+            <td><%= review.content %></td>
+            <td><%= review.rating %></td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  <% } else { %>
+    <h3>No Reviews Yet</h3>
+  <% } %>
 </main>
   
 <%- include('../partials/footer') %>

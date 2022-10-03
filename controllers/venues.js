@@ -78,6 +78,25 @@ function edit(req, res) {
   })
 }
 
+function createReview(req, res) {
+  Venue.findById(req.params.id)
+  .then(venue => {
+    venue.reviews.push(req.body)
+    venue.save()
+    .then(() => {
+      res.redirect(`/venues/${venue._id}`)
+    })
+    .catch(err => {
+      console.log(err)
+      res.redirect('/')
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/')
+  })
+}
+
 function update(req, res) {
   console.log(("!!!!!!!!!!!UPDATE REQUEST!!!!!!!!!"))
 }
@@ -89,5 +108,6 @@ export {
   show,
   deleteVenue as delete,
   edit, 
-  update
+  update, 
+  createReview
 }
