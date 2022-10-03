@@ -3,16 +3,14 @@
 <%- include('../partials/nav') %>
 
 <main>
-  <h1><%= title %></h1>
+  <h1><%= venue.title %></h1>
   <section>
-    <div>Venue: </div>
-    <div><%= venue.title %></div>
-    <div>Release Year: </div>
+    <div>Address: </div>
     <div><%= venue.address %></div>
     <div>Website: </div>
-    <div><%= movie.website %></div>
+    <div><%= venue.website %></div>
     <div>Details: </div>
-    <div><%= venue.details.join(', ') %></div>
+    <div><%= venue.details %></div>
   </section>
 </main>
   

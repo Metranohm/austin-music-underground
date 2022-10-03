@@ -12,11 +12,11 @@ router.get("/new", isLoggedIn, venuesCtrl.new)
 
 router.delete("/:id", isLoggedIn, venuesCtrl.delete)
 
-router.get("/venues/:id", venuesCtrl.show)
+router.get("/:id", venuesCtrl.show)
 
-router.get("/:id/edit", venuesCtrl.edit)
+// router.get("/:id/edit", venuesCtrl.edit)
 
-router.put("/:id", venuesCtrl.update)
+// router.put("/:id", venuesCtrl.update)
 
 export {
   router
