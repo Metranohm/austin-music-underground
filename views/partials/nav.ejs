@@ -4,8 +4,8 @@
 </head>
 <body>
 <nav>
-  <a href="/venues/new">Add Venue</a>
-  <a href="/venues">All Venues</a>
+  <a href="/venues/new" <%- title === "Add Venue" ? "class='active'" : '' %>>Add Venue</a>
+  <a href="/venues" <%- title === "All Venues" ? "class='active'" : '' %>>All Venues</a>
   <a href="/profiles"></a>
   <% if (user) { %>
     <a href="/auth/logout">👋</a>

@@ -8,7 +8,7 @@
       <tr>
         <th>Title</th>
         <th>Address</th>
-        <th>Details</th>
+        <th>Website</th>
         <th>imageURL</th>
       </tr>
     </thead>
@@ -17,13 +17,13 @@
         <tr>
           <td><%= venue.title %></td>
           <td><%= venue.address %></td>
-          <td><%= venue.details %></td>
+          <td><%= venue.website %></td>
           <td><%= venue.imageURL %></td>
           <td><a href="/venues/<%= venue._id %>">DETAILS</a></td>
           <td>
-          <!-- <form action="/venues/<%# venue._id %>?_method=DELETE" method="POST">
-            <button>X</button>
-          </form> -->
+            <form action="/venues/<%= venue._id %>?_method=DELETE" method="POST">
+              <button>X</button>
+            </form>
           </td>
         </tr>
       <% }) %>

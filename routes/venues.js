@@ -10,6 +10,8 @@ router.post("/", isLoggedIn, venuesCtrl.create)
 
 router.get("/new", isLoggedIn, venuesCtrl.new)
 
+router.delete("/:id", venuesCtrl.delete)
+
 router.get("/venues/:id", venuesCtrl.show)
 
 export {

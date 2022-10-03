@@ -52,10 +52,21 @@ function show(req, res) {
   })
 }
 
+function deleteVenue(req, res) {
+  Venue.findByIdAndDelete(req.params.id)
+  .then(venue => {
+    res.redirect("/venues")
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect("/")
+  })
+}
 
 export {
   index,
   newVenue as new,
   create, 
-  show
+  show,
+  deleteVenue as delete
 }
