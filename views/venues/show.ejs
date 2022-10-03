@@ -1,14 +1,19 @@
 <%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/venues/show.css" />
 <%- include('../partials/nav') %>
 
-<section>
-  <h1><%= venue.name %></h1>
-
-  <!-- <%# if (venue.owner.equals(user?.profile._id)) { %> -->
-    <!-- <a href="/venues/<%= venue._id %>"> -->
-      <button class="btn">View this Venue! </button>
-    <!-- </a>
-  <%# )} %> -->
-</section>
-
+<main>
+  <h1><%= title %></h1>
+  <section>
+    <div>Venue: </div>
+    <div><%= venue.title %></div>
+    <div>Release Year: </div>
+    <div><%= venue.address %></div>
+    <div>Website: </div>
+    <div><%= movie.website %></div>
+    <div>Details: </div>
+    <div><%= venue.details.join(', ') %></div>
+  </section>
+</main>
+  
 <%- include('../partials/footer') %>
