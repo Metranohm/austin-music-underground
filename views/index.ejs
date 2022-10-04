@@ -2,7 +2,7 @@
 <%- include('./partials/nav') %>
 
 <main>
-  <h1>hello, <%= user ? user.profile.name : "friend" %></h1>
+  <h1>Welcome <%= user ? user.profile.name : "friend" %> to Austin Music Underground</h1>
   <% if (user?.profile.avatar) { %>
     <div>
       <img
@@ -11,6 +11,7 @@
       />
     </div>
   <% } %>
+  <h4>Austin as a music city has changed a lot over the years and many of the most storied venues in town have either closed or caved to the mainstream and lost what made them unique. We are here to focus attention on music spaces in Austin that cater to those with tastes that deviate from the norm</h3>
 </main>
 
 <%- include('./partials/footer') %>
