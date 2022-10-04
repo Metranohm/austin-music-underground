@@ -5,16 +5,22 @@
 <main>
   <h1><%= title %></h1>
   <form id="new-form" action="/venues" method="POST">
+    <div>
     <label for="title-input">Venue:</label>
     <input type="text" name="title" id="title-input">
+  </div><div>
     <label for="address-input">Address:</label>
     <input type="text" name="address" id="address-input">
+  </div><div>
     <label for="details-input">Details:</label>
     <input type="text" name="details" id="details-input">
+  </div><div>
     <label for="imageURL-input">ImageUrl:</label>
     <input type="text" name="imageURL" id="imageURL-input">
+  </div><div>
     <label for="website-input">Website:</label>
     <input type="text" name="website" id="website-input">
+  </div>
     <button type="submit">Add Venue</button>
   </form>
 </main>
