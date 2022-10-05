@@ -105,5 +105,10 @@ nav > a {
 }
 
 #logo {
-  
+  padding: 10px 800px;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  max-width: 20%;
+  max-height: 75px;
 }
