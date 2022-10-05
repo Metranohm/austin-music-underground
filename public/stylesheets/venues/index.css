@@ -1,0 +1,7 @@
+#navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  outline: 3px solid pink;
+}
