@@ -3,16 +3,14 @@
 <%- include('../partials/nav') %>
 
 <section>  
-<h1>Venues test</h1>
+<h1>Venues</h1>
   <div>
-      <% venues.forEach(venue => { %>
-        <!-- <%# const wrapper =  venue.createElement("div"); %>
-        <%# wrapper.className = "container";%> -->
+      <% venues.forEach(venue => { %>>
         <div id="card">
           <img id="image" src="<%= venue.imageURL %>">
           <div id="title"><%= venue.title %></div>
           <div id="address"><%= venue.address %></div>
-          <div id="website"><%= venue.website %></div>
+          <a href="<%= venue.website %>"><div id="website">Website</div></a>
           <div><a href="/venues/<%= venue._id %>">More Info</a></div>
           </div>
       <% }) %>
