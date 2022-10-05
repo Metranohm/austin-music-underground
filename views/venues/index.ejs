@@ -3,32 +3,19 @@
 
 <section>  
 <h1>Venues</h1>
-  <table>
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th>Address</th>
-        <th>Website</th>
-        <th>imageURL</th>
-      </tr>
-    </thead>
-    <tbody>
+  <div id="cardinfo">
       <% venues.forEach(venue => { %>
-        <tr>
-          <td><%= venue.title %></td>
-          <td><%= venue.address %></td>
-          <td><%= venue.website %></td>
-          <td><%= venue.imageURL %></td>
-          <td><a href="/venues/<%= venue._id %>">More Info</a></td>
-          <td>
-            <form action="/venues/<%= venue._id %>?_method=DELETE" method="POST">
-              <button>X</button>
-            </form>
-          </td>
-        </tr>
+        <!-- <%# const wrapper =  venue.createElement("div"); %>
+        <%# wrapper.className = "container";%> -->
+        <div>
+          <div id="title"><%= venue.title %></div>
+          <div id="address"><%= venue.address %></div>
+          <div id="website"><%= venue.website %></div>
+          <div id="image"><%= venue.imageURL %></div>
+          <div><a href="/venues/<%= venue._id %>">More Info</a></div>
+          </div>
       <% }) %>
-    </tbody>
-  </table>
+    
 </section>
 
 <%- include('../partials/footer') %>

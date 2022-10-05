@@ -35,6 +35,22 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  height: 100vh;
+}
+
+#cardinfo > div {
+ border: 3px solid #EEEBD3;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 5px;
+  padding: 8px;
+  height: 25vh;
+  width: 200px;
+  display: inline-block;
+  float: left;
+  overflow: hidden; 
+  text-overflow: ellipsis
 }
 
 h1 {
