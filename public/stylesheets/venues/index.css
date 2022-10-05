@@ -1,7 +1,18 @@
-#navbar {
+#card {
+  border: 3px solid #EEEBD3;
+  justify-content: center;
+  align-items: center;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  outline: 3px solid pink;
+  margin: 5px;
+  padding: 8px;
+  height: 300px;
+  width: 200px;
+  display: inline-block;
+  overflow: hidden; 
+  text-overflow: ellipsis
+}
+
+#card img {
+  height: 100px;
+  width: 100%;
 }

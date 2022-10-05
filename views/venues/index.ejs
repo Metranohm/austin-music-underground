@@ -1,17 +1,18 @@
 <%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/venues/index.css" />
 <%- include('../partials/nav') %>
 
 <section>  
-<h1>Venues</h1>
-  <div id="card">
+<h1>Venues test</h1>
+  <div>
       <% venues.forEach(venue => { %>
         <!-- <%# const wrapper =  venue.createElement("div"); %>
         <%# wrapper.className = "container";%> -->
-        <div>
+        <div id="card">
+          <img id="image" src="<%= venue.imageURL %>">
           <div id="title"><%= venue.title %></div>
           <div id="address"><%= venue.address %></div>
           <div id="website"><%= venue.website %></div>
-          <div id="image"><%= venue.imageURL %></div>
           <div><a href="/venues/<%= venue._id %>">More Info</a></div>
           </div>
       <% }) %>
