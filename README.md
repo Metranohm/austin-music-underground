@@ -22,7 +22,7 @@ Website link:
 7. AAA I want to be able to delete any reviews off the site at will
 
 
-![alt text](public/VenuesIndexPage.png)
+![image](public/VenuesIndexPage.png)
 
 ### Technologies used: 
 Node.js, Express, Mongoose, MongoDB, JavaScript, HTML, CSS

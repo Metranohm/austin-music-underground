@@ -10,7 +10,9 @@
     </a>
   </section>
   <section>
-    <!-- <a href="/venues/new" <%#- title === "Add Venue" ? "class='active'" : '' %>>Add Venue</a> -->
+    <% if (user?.profile.admin) { %>
+      <a href="/venues/new" <%- title === "Add Venue" ? "class='active'" : '' %>>Add Venue</a>    
+    <% } %>
     <a id="navlink" href="/venues" <%- title === "All Venues" ? "class='active'" : '' %>>All Venues</a>
     <a id="navlink2" href="/profiles"></a>
     <% if (user) { %>

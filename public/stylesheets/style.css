@@ -26,12 +26,14 @@ body {
   justify-content: space-between;
 }
 
-main {
+#mainIndex {
   display: flex;
   align-items: center;
   padding: 10px;
   flex-direction: column;
   height: 100vh;
+  background-image: url("https://wallpaperaccess.com/full/2142855.jpg");
+  
 }
 
 #avatar {
@@ -55,7 +57,8 @@ h3 {
 h4 {
   color: #e3e9eb;
   width: 600px;
-  background-color: #255957;
+  background-color: black;
+  opacity: 80%;
 }
 
 #paragraph1, #paragraph2 {

@@ -3,6 +3,7 @@
 <%- include('../partials/nav') %>
 
 <main>
+  <section>
   <h1><%= venue.title %></h1>
   <section id="infolabels">
     <div><%= venue.address %></div>
@@ -10,31 +11,33 @@
     <div>--------</div>
     <div><%= venue.details %></div>
   </section>
-  <h2>Reviews</h2>
+  <div id="revtitle">
+    <h2>Reviews</h2>
+  </div>
   <form 
     id="add-review-form"
     action="/venues/<%= venue._id %>/reviews"
-    method="POST"
-  >
-  <div>
-  <label for="rating-select">Rating:</label>
-    <select name="rating" id="rating-select">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
-      <option value="7">7</option>
-      <option value="8">8</option>
-      <option value="9">9</option>
-      <option value="10" selected>10</option>
-    </div>
+    method="POST">
     <div>
     <label for="content-textarea">Review:</label>
     <textarea name="content" id="content-textarea"></textarea>
     </select></div>
-    <button type="submit">Add Review</button>
+    <div>
+      <label for="rating-select">Rating:</label>
+        <select name="rating" id="rating-select">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10" selected>10</option>
+        </div><div>
+    <button id="reviewBtn" type="submit">Add Review</button>
+  </div>
   </form>
   <% if (venue.reviews.length) { %>
     <table>
@@ -66,6 +69,9 @@
   <% } else { %>
     <h3>No Reviews Yet</h3>
   <% } %>
+</section>
+<!-- <section>
+</section> -->
 </main>
   
 <%- include('../partials/footer') %>

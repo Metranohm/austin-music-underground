@@ -5,6 +5,7 @@ const Schema = mongoose.Schema
 const profileSchema = new Schema({
   name: String,
   avatar: String,
+  admin: {type: Boolean, default: false},
   venues: [{ type: Schema.Types.ObjectId, ref: "Venue" }]
 }, {
   timestamps: true
