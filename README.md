@@ -21,6 +21,8 @@ Website link:
    
 7. AAA I want to be able to delete any reviews off the site at will
 
+## Planning:
+The planning materials can be found on the Trello board linked [here](https://trello.com/b/IjafxKL5/austin-music-underground).
 
 ![image](public/VenuesIndexPage.png)
 
