@@ -9,7 +9,7 @@
       <img src="https://img.icons8.com/ios-filled/500/underground-music.png" alt="logo" id="logo">
     </a>
   </section>
-  <section>
+  <section id="navSection">
     <% if (user?.profile.admin) { %>
       <a id="addnav" href="/venues/new" <%- title === "Add Venue" ? "class='active'" : '' %>>Add Venue</a>    
     <% } %>

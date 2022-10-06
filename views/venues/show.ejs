@@ -4,6 +4,7 @@
 
 <main>
   <section>
+    <div id="showmain">
   <h1><%= venue.title %></h1>
   <section id="infolabels">
     <div><%= venue.address %></div>
@@ -12,8 +13,7 @@
       <a id="editnav" href="/venues/<%= venue._id%>/edit" <%- title === "Edit Venue" ? "class='active'" : '' %>>Edit Venue</a>    
     <% } %>
     <div>--------</div>
-    <div><%= venue.details %></div>
-  </section>
+    <div id="detailId"><%= venue.details %></div>
   <div id="revtitle">
     <h2>Reviews</h2>
   </div>
@@ -73,8 +73,8 @@
     <h3>No Reviews Yet</h3>
   <% } %>
 </section>
-<!-- <section>
-</section> -->
+</section>
+</div id="showmain">
 </main>
   
 <%- include('../partials/footer') %>

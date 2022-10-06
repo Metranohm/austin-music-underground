@@ -48,10 +48,6 @@ body {
   margin: 0;
 }
 
-#avatar {
-}
-
-
 h1 {
   font-size: 36px;
   text-align: center;
@@ -86,6 +82,11 @@ h4 {
   color: #00B7FF;
   font-size: 17px;
   padding: 0 10px 0 10px;
+}
+
+#navSection {
+  display: flex;
+  display: inline-block;
 }
 
 #navlink {
