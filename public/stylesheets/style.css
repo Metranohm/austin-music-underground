@@ -15,6 +15,11 @@ body {
   color: #EEEBD3;
   /* Use a system font, if none are available use any found sans-sarif font */
   font-family: 'Orbitron', sans-serif;
+  overflow: auto; Hide scrollbars
+}
+
+.example::-webkit-scrollbar {
+  display: none;
 }
 
 #navbar {

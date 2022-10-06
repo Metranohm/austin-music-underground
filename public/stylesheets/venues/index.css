@@ -1,3 +1,16 @@
+section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#venuesContainer {
+  max-width: 850px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 #card {
   background-color: #0c0c07;
   border: 3px solid #EEEBD3;

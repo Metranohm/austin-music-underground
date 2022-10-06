@@ -4,7 +4,7 @@
 
 <section>  
 <h1>Venues</h1>
-  <div>
+  <div id="venuesContainer">
       <% venues.forEach(venue => { %>
         <div id="card">
           <img id="image" src="<%= venue.imageURL %>">
@@ -15,7 +15,7 @@
           <div><a href="/venues/<%= venue._id %>">More Info</a></div>
           </div>
       <% }) %>
-    
+    </div>  
 </section>
 
 <%- include('../partials/footer') %>

@@ -99,9 +99,19 @@ function createReview(req, res) {
   })
 }
 
-function update(req, res) {
-  console.log(("!!!!!!!!!!!UPDATE REQUEST!!!!!!!!!"))
-}
+// function edit(req, res) {
+//   Venue.findById(req.params.id)
+//   .then(venue => {
+//     res.render("venues/edit", {
+//       venue, 
+//       title: "Edit Venue"
+//     })
+//   })
+//   .catch(err => {
+//     console.log(err)
+//     res.redirect("/")
+//   })
+// }
 
 function deleteReview(req, res) {
   Venue.findById(req.params.venueId)
@@ -118,6 +128,16 @@ function deleteReview(req, res) {
   })
 }
 
+function update(req, res) {
+  Venue.findByIdAndUpdate(req.params.id, req.body, {new: true})
+  .then(venue => {
+    res.redirect(`/movies/${venue._id}`)
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect("/")
+  })
+}
 
 export {
   index,

@@ -18,9 +18,9 @@ router.post("/:id/reviews", venuesCtrl.createReview)
 
 router.delete("/:venueId/reviews/:reviewId", venuesCtrl.deleteReview)
 
-// router.get("/:id/edit", venuesCtrl.edit)
+router.get("/:id/edit", venuesCtrl.edit)
 
-// router.put("/:id", venuesCtrl.update)
+router.put("/:id", venuesCtrl.update)
 
 export {
   router
