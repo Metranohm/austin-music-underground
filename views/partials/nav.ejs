@@ -13,9 +13,6 @@
     <% if (user?.profile.admin) { %>
       <a id="addnav" href="/venues/new" <%- title === "Add Venue" ? "class='active'" : '' %>>Add Venue</a>    
     <% } %>
-    <% if (user?.profile.admin) { %>
-      <a id="editnav" href="/venues/edit" <%- title === "Edit Venue" ? "class='active'" : '' %>>Edit Venue</a>    
-    <% } %>
     <a id="navlink" href="/venues" <%- title === "All Venues" ? "class='active'" : '' %>>All Venues</a>
     <a id="navlink2" href="/profiles"></a>
     <% if (user) { %>

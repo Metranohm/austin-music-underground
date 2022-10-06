@@ -3,14 +3,14 @@ body {
   height: 100vh;
 }
 
-#new-form {
+#new-form2 {
   flex-direction: column;
   max-width: 600px;
   max-height: 900px;
   padding-left: 15px;
 }
 
-#new-form > * {
+#new-form2 > * {
   margin-bottom: 8px;
 }
 
@@ -27,6 +27,6 @@ body {
   width: 80%;
 }
 
-#new-form > button {
+#new-form2 > button {
   max-width: 300px;
 }
