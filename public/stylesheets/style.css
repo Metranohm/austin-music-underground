@@ -30,7 +30,6 @@ main {
   display: flex;
   align-items: center;
   padding: 10px;
-
   flex-direction: column;
   height: 100vh;
 }
@@ -63,8 +62,28 @@ h4 {
   text-align: center;
 }
 
-a {
+#website {
   color: #00B7FF;
+  font-size: 17px;
+  padding: 0 10px 0 10px;
+}
+
+#navlink {
+  color: #00B7FF;
+  font-size: 20px;
+  padding: 0 10px 0 10px;
+}
+
+#navlink2 {
+  color: #00B7FF;
+  font-size: 20px;
+  padding: 0 10px 0 10px;
+}
+
+#navlink3 {
+  color: #00B7FF;
+  font-size: 20px;
+  padding: 0 20px 0 10px;
 }
 
 nav img {

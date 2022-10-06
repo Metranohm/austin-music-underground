@@ -11,10 +11,10 @@
   </section>
   <section>
     <!-- <a href="/venues/new" <%#- title === "Add Venue" ? "class='active'" : '' %>>Add Venue</a> -->
-    <a href="/venues" <%- title === "All Venues" ? "class='active'" : '' %>>All Venues</a>
-    <a href="/profiles"></a>
+    <a id="navlink" href="/venues" <%- title === "All Venues" ? "class='active'" : '' %>>All Venues</a>
+    <a id="navlink2" href="/profiles"></a>
     <% if (user) { %>
-      <a href="/auth/logout">Logout</a>
+      <a id="navlink3" href="/auth/logout">Logout</a>
     <% } else { %>
       <div
         id="g_id_onload"

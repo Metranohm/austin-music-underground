@@ -1,65 +1,34 @@
-# MEN Stack with OAuth Template
+# Austin Music Underground
 
-This is a MEN Stack template that includes OAuth.
+#### Austin Music Underground exists to bring attention to music spaces in Austin that cater to bands and fans with musical tastes that deviate from the norm
 
-Use this to go build things! 🚀
+### Getting Started:
+Website link: 
 
-## To Use This Template
+### How to use the site:
 
-__Replace `<name-of-your-app-here>` in the commands below with the name of your app!__
+1. AAU I want to be able to login using Google OAuth 
 
-```bash
-git clone https://github.com/SEI-Remote/men-stack-oauth-template.git <name-of-your-app-here>
-cd <name-of-your-app-here>
-```
+2. AAU I want to be able click on the "All Venues" link to see a collection of music venues & information in card form
 
-Once you are in the project directory:
+3. AAU I want to be able to visit the venues' websites to see the current schedules
+   
+4. AAU I want to be able to click "More Info" to visit a landing page for each venue that allows me to review and rate them.
+   
+5. AAU I want to be able to delete reviews I make, but only ones tied to my individual profile
 
-```bash
-rm -rf .git
-```
+6. AAU I want to be able to see what other visitors to the site have said in their reviews
+   
+7. AAA I want to be able to delete any reviews off the site at will
 
-Here's what your command line output should like after this step (note that the indicator that we are in a git repository is gone!)
 
-<img src="https://i.imgur.com/L47kNOZ.png" alt="The command line before and after running the rm -rf .git command. Before git:(main) is visible indiating that the directory contains a git repository, after the command it is not.">
+![alt text](public/VenuesIndexPage.png)
 
-Re-initialize a git repository:
+### Technologies used: 
+Node.js, Express, Mongoose, MongoDB, JavaScript, HTML, CSS
 
-```bash
-git init
-```
-
-Create a repo for this project on GitHub and add that remote to your project with `git remote add origin Your-repo-URL-here`.
-
-Run npm i to fetch the template's dependencies:
-
-```bash
-npm i
-```
-
-touch a .env file:
-
-```bash
-touch .env
-```
-
-Fill it with the following:
-
-```
-DATABASE_URL=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-GOOGLE_CLIENT_ID=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-GOOGLE_SECRET=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-SESSION_SECRET=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
-
-Replace the `DATABASE_URL`, `GOOGLE_CLIENT_ID`, `GOOGLE_SECRET`, and `SESSION_SECRET` with values that you provide.
-
-Delete this `README.md` file and finally, make an initial commit:
-
-```bash
-git add .
-git commit -m "initial commit"
-git push -u origin main
-```
-
-You're done!
+### Iceboxes: 
+1. AAU I want to be able to click a button within the Venue details view to google map to the location
+2. AAU I want users to be able to add venues they've been to that aren't in the system, with the card to be populated with a stock image
+3. AAU that has attended a venue, I should be able to view the venues I've visited in my profile page
+4. AAU, I should be able to go to a page and see a list of profiles from every user that has created an account on the site.

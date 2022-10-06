@@ -15,7 +15,7 @@
 }
 
 body {
-  background-color: darkgoldenrod;
+  background-image: url("https://www.liveclub.it/wp-content/uploads/2020/01/copertina3.jpg")
 }
 
 #card img {
@@ -29,4 +29,5 @@ body {
 
 #address {
   text-align: center;
+  font-size: 15px;
 }
