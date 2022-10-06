@@ -44,7 +44,7 @@ function show(req, res) {
     console.log('venue', venue);
     res.render('venues/show', {
       venue,
-      title: "show"
+      title: venue.title
     })
   })
   .catch(err => {
