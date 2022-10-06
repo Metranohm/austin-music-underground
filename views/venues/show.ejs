@@ -22,22 +22,7 @@
     <label for="content-textarea">Review:</label>
     <textarea name="content" id="content-textarea"></textarea>
     </select></div>
-    <div>
-      <label for="rating-select">Rating:</label>
-        <select name="rating" id="rating-select">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10" selected>10</option>
-        </div><div>
-    <button id="reviewBtn" type="submit">Add Review</button>
-  </div>
+    <button type="submit">Add Review</button>
   </form>
   <% if (venue.reviews.length) { %>
     <table>

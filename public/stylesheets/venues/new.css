@@ -7,10 +7,11 @@ body {
   flex-direction: column;
   max-width: 600px;
   max-height: 900px;
+  padding-left: 15px;
 }
 
 #new-form > * {
-  margin: 8px;
+  margin-bottom: 8px;
 }
 
 .form-row {
@@ -30,12 +31,12 @@ body {
   max-width: 300px;
 }
 
-main {
+/* main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
+} */
 
 
 /* #new-form {
