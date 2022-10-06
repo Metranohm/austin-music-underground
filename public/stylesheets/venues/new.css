@@ -25,6 +25,10 @@ input[type=submit] {
   cursor: pointer;
 }
 
+body {
+  background-color: #04AA6D;
+}
+
 input[type=submit]:hover {
   background-color: #45a049;
 }

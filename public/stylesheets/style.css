@@ -12,7 +12,6 @@ html {
 }
 
 body {
-  background-image: url(https://thecosmicclash.com/wp-content/uploads/2022/05/Austin-skyline-evening-Erik-Ellison.jpg);
   color: #EEEBD3;
   /* Use a system font, if none are available use any found sans-sarif font */
   font-family: 'Orbitron', sans-serif;
@@ -31,9 +30,13 @@ main {
   display: flex;
   align-items: center;
   padding: 10px;
-  /* justify-content: center; */
+
   flex-direction: column;
   height: 100vh;
+}
+
+#avatar {
+  align-items: right;
 }
 
 
@@ -54,6 +57,10 @@ h4 {
   color: #e3e9eb;
   width: 600px;
   background-color: #255957;
+}
+
+#paragraph1, #paragraph2 {
+  text-align: center;
 }
 
 a {

@@ -6,7 +6,7 @@
   display: flex;
   margin: 5px;
   padding: 8px;
-  height: 300px;
+  height: 315px;
   width: 200px;
   display: inline-block;
   overflow: hidden; 
@@ -14,7 +14,19 @@
   text-align-last: center;
 }
 
+body {
+  background-color: darkgoldenrod;
+}
+
 #card img {
   height: 100px;
   width: 100%;
+}
+
+#title {
+  text-align: center;
+}
+
+#address {
+  text-align: center;
 }

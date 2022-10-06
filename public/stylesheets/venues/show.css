@@ -2,6 +2,11 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  width: 500px;
 }
 
-
+h4 {
+  color: #e3e9eb;
+  width: 600px;
+  background-color: #255957;
+}
