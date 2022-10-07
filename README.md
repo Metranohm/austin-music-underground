@@ -24,7 +24,7 @@ Website link:
 ## Planning:
 The planning materials can be found on the Trello board linked [here](https://trello.com/b/IjafxKL5/austin-music-underground).  The trello board includes wireframes and an ERD
 
-![image](public/Landingpage.png)
+![image](public/LandingPage.png)
 
 ![image](public/VenuesIndexPage.png)
 
