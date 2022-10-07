@@ -24,7 +24,11 @@ Website link:
 ## Planning:
 The planning materials can be found on the Trello board linked [here](https://trello.com/b/IjafxKL5/austin-music-underground).  The trello board includes wireframes and an ERD
 
+![image](public/Landingpage.png)
+
 ![image](public/VenuesIndexPage.png)
+
+![image](public/Showpage.png)
 
 ### Technologies used: 
 Node.js, Express, Mongoose, MongoDB, JavaScript, HTML, CSS
