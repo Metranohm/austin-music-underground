@@ -23,6 +23,7 @@
     method="POST"
   >
   <div>
+    <% if (user?.profile) { %>
   <label for="rating-select">Rating:</label>
     <select name="rating" id="rating-select">
       <option value="1">1</option>
@@ -67,6 +68,7 @@
             </td>
           </tr>
         <% }) %>
+        <% } %>
       </tbody> 
     </table>
   <% } else { %>
